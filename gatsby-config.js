@@ -29,6 +29,12 @@ module.exports = {
         basePath: '/decks',
       },
     },
+    {
+      resolve: 'gatsby-plugin-compile-es6-packages',
+      options: {
+        modules: ['@mdx-deck/gatsby-plugin'],
+      },
+    },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
   ],
