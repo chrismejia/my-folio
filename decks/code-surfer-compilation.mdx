@@ -1,0 +1,112 @@
+import { CodeSurfer, CodeSurferColumns, Step } from "code-surfer"
+import { nightOwl } from "@code-surfer/themes"
+
+export const theme = nightOwl
+
+# Deck Title
+
+---
+
+<CodeSurfer 
+  style={{
+      width: '100vw',
+      height: '100vh',
+    }}>
+
+```js
+console.log(1);
+console.log(2);
+console.log(3);
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```js
+console.log(1);
+console.log(2);
+console.log(3);
+```
+
+```js 1
+console.log(1);
+console.log(2);
+console.log(3);
+```
+
+```js
+console.log(1);
+console.log(2);
+console.log(3);
+console.log(4);
+console.log(5);
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```js 1:2,3[8:10]
+console.log(1);
+console.log(2);
+console.log(3);
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```js 1 title="Title" subtitle="Look at the first line"
+console.log(1);
+console.log(2);
+console.log(3);
+```
+
+```js 2 title="Title" subtitle="and now the second"
+console.log(1);
+console.log(2);
+console.log(3);
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurferColumns>
+
+<Step subtitle="First Step">
+
+```js
+console.log(1);
+console.log(2);
+```
+
+```js
+console.log("a");
+console.log("b");
+```
+
+</Step>
+
+<Step subtitle="Second Step">
+
+```js 2
+console.log(1);
+console.log(2);
+```
+
+```js 2
+console.log("a");
+console.log("b");
+```
+
+</Step>
+
+</CodeSurferColumns>
